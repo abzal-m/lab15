@@ -12,7 +12,6 @@ namespace lab15
             Console.WriteLine(" 1 | Начало дня");
 
             int action1 = ChooseVariant(1, 2);
-
             switch (action1)
             {
                 case 1:
@@ -65,6 +64,7 @@ namespace lab15
                     break;
                 }
             }
+
             int action4 = ChooseVariant(1, 12);
             switch(action4)
             {
@@ -88,42 +88,68 @@ namespace lab15
                 default:
                 break;
             }
-
-            /*switch (action2)
+            int action6 = ChooseVariant(1, 5);
+            switch(action6)
             {
-                case 1:
-                case 2:
-                case 3:
-                case 4:
-                case 5:
-                case 6:
-                case 7:
-                    ChooseAction(3);
-                    break;
-                case 8: 
-                case 9: 
-                case 10:
-                    int action3 = ChooseVariant(1, 6);
-                    switch (action3)
+                case 1: case 2:
+                    ChooseAction(9);
+                    int action7 = ChooseVariant(1, 8);
+                    switch(action7)
+                        {
+                            case 1: case 2:
+                                ChooseAction(10);
+                                int action8 = ChooseVariant(1, 8);
+                                switch(action8)
+                                {
+                                    case 1: case 2:
+                                        ChooseAction(13);
+                                        break;
+                                    case 3:case 4:case 5:case 6:case 7:case 8:
+                                        ChooseAction(14);
+                                        break;
+                                    default:
+                                        break;
+                                }
+                                break;
+                            case 3:case 4:case 5:case 6:case 7:case 8:
+                                ChooseAction(11);
+                                int action9 = ChooseVariant(1, 2);
+                                switch (action9)
+                                {
+                                    case 1:
+                                        ChooseAction(13);
+                                        break;
+                                    case 2:
+                                        ChooseAction(14);
+                                        break;
+                                    default:
+                                        break;
+                                }
+                                break;
+                            default:
+                                break;
+                        }
+                        break;
+                case 3:case 4:case 5:
+                    ChooseAction(12);
+                    int action10 = ChooseVariant(1, 8);
+                    switch(action10)
                     {
-                        case 1:
-                        case 2:
-                        case 3:
-                        case 4:
-                            ChooseAction(4);
+                        case 1: case 2:case 3:case 4:case 5:
+                            ChooseAction(13);
                             break;
-                        case 5:
-                        case 6:
-                            ChooseAction(5);
+                        case 6:case 7:case 8:
+                            ChooseAction(14);
                             break;
                         default:
                             break;
                     }
                     break;
-                default:
-                    break;
+
+
             }
-            */
+
+           
             PrintResultActionList(resultActionList);
         }
 
